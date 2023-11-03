@@ -1,0 +1,472 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left, rgba(2, 2, 2, 0.75), rgba(88, 86, 86, 0.14));
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #333;
+}
+
+nav .navLinks button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+nav .menubtn {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 5%;
+}
+
+.row .column1 {
+  padding-right: 50px;
+}
+
+.column1 h1 {
+  color: rgb(58, 57, 57);
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.column1 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.column1 button {
+  width: 150px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+  .column2 img {
+    width: 350px;
+  }
+
+  .column1 h1 {
+    font-size: 40px;
+  }
+
+  .column1 p {
+    font-size: 17px;
+  }
+
+  .row {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .column1 h1 {
+    font-size: 35px;
+  }
+
+  .row {
+    flex-direction: column;
+
+  }
+
+  .row .column1 {
+    padding: 30px;
+  }
+}
+
+.about {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline;
+  padding: 2%;
+}
+
+
+.about p {
+  text-align: left;
+  align-items: center;
+}
+
+.content {
+  height: auto;
+  background-color: rgb(35, 33, 33);
+  font-size: 1.5rem;
+  padding: 3% 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.brands {
+  padding: 20px;
+}
+
+.brands h1 {
+  margin-top: 10px;
+  font-size: 2em;
+  color: rgb(18, 18, 18);
+  text-align: center;
+  text-decoration: underline;
+  padding: 1%;
+
+}
+
+.brand-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.brand-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background-image: linear-gradient(to right, rgba(2, 2, 2, 0.75), rgba(88, 86, 86, 0.14));
+
+}
+
+.brand-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 50%;
+}
+
+.brand-item h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.brand-item p {
+  margin-top: 10px;
+}
+
+.brands button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #000;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .brand-item {
+    flex-basis: 100%;
+  }
+}
+
+.stock {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 252, 252);
+  height: 70vh;
+  padding: 5%;
+}
+
+.stock h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+  font-weight: 1;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.newOnes {
+  background-color: white;
+  color: black;
+  height: 70vh;
+  padding: 5%;
+}
+
+.image-container {
+  width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.image-container img {
+  width: 20rem;
+  height: 15rem;
+  display: inline-block;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    padding: 10px 0;
+  }
+
+  .image-container img {
+    margin: 5px;
+  }
+}
+
+.newOnes h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+  font-weight: 1;
+  border-bottom: 3px solid black;
+}
+
+.newwatch {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.newwatchImg img {
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+  background-color: black;
+
+}
+
+.newwatchDetails {
+  padding: 2%;
+  padding-top: 100px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 300px;
+  margin: 20px;
+  background-color: black;
+}
+
+.newwatchDetails h2,
+button {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.newwatchDetails button {
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 30%;
+}
+
+.footer {
+  background-color: black;
+  height: 10vh;
+  padding: 2%;
+
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+
+}
+
+.footer li {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .content {
+    height: auto;
+    font-size: 3rem;
+
+  }
+
+  .newOnes {
+    height: auto;
+  }
+
+  .newOnes h1 {
+    font-size: 2rem;
+
+  }
+
+  .newwatch {
+    flex-direction: column;
+
+  }
+
+  .newwatchDetails {
+    padding: 0%;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .content {
+      font-size: .5rm;
+
+    }
+
+  }
+}
+
+
+/* Media query for tablet screens */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row .column1,
+  .row .column2 {
+    padding: 0;
+  }
+
+  .column1 h1 {
+    font-size: 35px;
+  }
+
+  .column1 p {
+    font-size: 17px;
+  }
+
+  .content {
+    padding: 8% 2%;
+    font-size: 1rem;
+  }
+
+  .newOnes {
+    padding: 5%;
+  }
+
+  .newOnes h1 {
+    font-size: 3rem;
+  }
+
+  .newwatch {
+    flex-direction: column;
+  }
+
+  .newwatchImg img {
+    max-width: 100%;
+  }
+
+  .newwatchDetails {
+    padding: 2%;
+  }
+
+  .newwatchDetails h2,
+  button {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+  #About {
+    font-size: 10px;
+    align-items: center;
+  }
+
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .menubtn {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .brands {
+    font-size: 1.5em;
+  }
+
+  .stock {
+    height: 55vh;
+  }
+
+  .stock h1 {
+    font-size: 2rem;
+  }
+
+  .newwatchDetails {
+    height: 200px;
+  }
+
+  .newwatchDetails h2,
+  button {
+    font-size: 1.2rem;
+  }
+}

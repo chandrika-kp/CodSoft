@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  color: #549fbd;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(49, 76, 49);
+}
+
+.formstyle {
+  width: 270px;
+  height: 330px;
+  margin: 20px auto;
+  border: 5px solid rgb(175, 80, 227);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(245, 203, 253);
+}
+
+h1 {
+  text-align: center;
+  padding: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+input:hover {
+  background-color: rgb(103, 16, 111);
+  color: white
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 2px;
+  cursor: pointer;
+  background-color: rgb(67, 85, 88);
+  color: white;
+  border-radius: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+}
+
+.btn:hover {
+  color: black;
+  background-color: rgb(181, 86, 219);
+}
+
+.textview {
+  width: 223px;
+  margin: 5px;
+  font-size: 25px;
+  padding: 5px;
+  background-color: white;
+}
+
+body {
+  background-color: black;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>Watch Landing Page</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav style="background: black;">
+    <div class="logo">WatchBox</div>
+    <div class="navLinks">
+      <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#new">New Arrivals</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <button type="button">Login</button>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header  -->
+  <header>
+    <div class="row">
+      <div class="column1">
+        <h1>WatchBox</h1>
+        <p>Punctuate your collection with a timepiece that pulls it all together.</p>
+        <button onclick="myfunction()">Shop Now</button>
+      </div>
+      <div class="column2">
+        <img src="./src/1.jpg" alt="banner" width="500px">
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="About">
+    <div class="content">
+      <h1 class="about" id="about">About</h1>
+      <p>WatchBox is home to the greatest collection of pre-owned luxury watches, all certified as authentic and
+        Collector Quality.Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eveniet id maxime non dolores
+        quos nostrum eum
+        similique tempore quisquam sit consequatur dolor eligendi, cupiditate nesciunt fugit eius dignissimos adipisci
+        animi magnam! Inventore aspernatur autem atque fuga. Incidunt eligendi dolores fugiat perferendis, iste
+        voluptatem recusandae excepturi pariatur tempore a. Dicta a quod laboriosam atque culpa nulla tenetur tempora
+        ducimus deserunt, quam voluptate veniam cupiditate unde sed eos facere dolorum illum alias blanditiis illo
+        ratione neque! Ab sint a velit autem sit, ipsa fugit ducimus itaque non quae numquam quod pariatur nobis
+        voluptatibus cumque aliquid natus esse deserunt? Rerum, architecto omnis?</p>
+    </div>
+
+    <div class="brands" id="brands">
+      <h1>Our Watch Brands</h1>
+      <div class="brand-container">
+        <div class="brand-item">
+          <img src="./src/2.jpg" alt="Brand 1">
+          <h2>Rolex</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non harum voluptates. Est vero,
+            assumenda non id perspiciatis animi neque ex quos. </p>
+          <button onclick="myfunction()">Explore more</button>
+        </div>
+        <div class="brand-item">
+          <img src="./src/3.jpg" alt="Brand 2">
+          <h2>EBEL</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non harum voluptates. Est vero,
+            assumenda non id perspiciatis animi neque ex quos. Ea in magni facilis aliquam non suscipit voluptatum.</p>
+          <button onclick="myfunction()">Explore more</button>
+        </div>
+        <div class="brand-item">
+          <img src="./src/4.jpg" alt="Brand 3">
+          <h2>Longines</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non harum voluptates. Est vero,
+            assumenda non id perspiciatis animi neque ex quos. Ea in magni facilis aliquam non suscipit voluptatum.</p>
+          <button onclick="myfunction()">Explore more</button>
+        </div>
+        <div class="brand-item">
+          <img src="./src/5.jpg" alt="Brand 3">
+          <h2>Hublot</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non harum voluptates. Est vero,
+            assumenda non id perspiciatis animi neque ex quos. </p>
+          <button onclick="myfunction()">Explore more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="stock" id="collection">
+      <h1>OurCollection</h1>
+      <div class="image-container">
+        <img src="./src/6.jpg" alt="Image 1">
+        <img src="./src/7.jpg" alt="Image 2">
+        <img src="./src/8.jpg" alt="Image 3">
+        <img src="./src/9.jpg" alt="Image 4">
+        <img src="./src/10.jpg" alt="Image 1">
+        <img src="./src/1.jpg" alt="Image 2">
+        <img src="./src/6.jpg" alt="Image 3">
+        <img src="./src/7.jpg" alt="Image 4">
+        <!-- Add more images as needed -->
+      </div>
+
+    </div>
+
+    <div class="newOnes" id="new">
+      <h1>Just In</h1>
+      <div class="newwatch">
+        <div class="newwatchImg">
+          <img
+            src="https://watchbox-sfcc.imgix.net/home/3rd-mod/Collector+Cornerstones+Third+Mod_v3.jpg?auto=format,compress&cs=srgb&usm=5&usmrad=5&vib=5&h=450"
+            alt="">
+        </div>
+
+        <div class="newwatchDetails">
+          <h2>Vacheron Constantin Overseas</h2>
+          <p>A collection at the intersection of versatility and comfort.</p>
+          <button onclick="myfunction()">Shop Now</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+
+    <ul>
+      <p>copyright @ 2023 chandrika</p>
+      <li><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;</li>
+      <li><i class="fa-brands fa-mail-reply"></i>&nbsp;</li>
+      <li><i class="fa-brands fa-whatsapp"></i>&nbsp;</li>
+    </ul>
+  </footer>
+
+  <script>
+    function myfunction() {
+      alert("signin to continue shopping...!");
+    }
+  </script>
+</body>
+
+</html>
